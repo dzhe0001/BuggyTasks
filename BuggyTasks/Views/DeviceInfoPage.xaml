@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BuggyTasks.Views.DeviceInfoPage"
+             Title="Device Information">
+    <ScrollView Padding="20">
+        <VerticalStackLayout Spacing="15">
+            <Label Text="Device Information" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,20"/>
+            
+            
+            <VerticalStackLayout Spacing="10">
+                <Label x:Name="ModelLabel" FontSize="16"/>
+                <Label x:Name="PlatformLabel" FontSize="16"/>
+                <Label x:Name="VersionLabel" FontSize="16"/>
+                <Label x:Name="ManufacturerLabel" FontSize="16"/>
+                <Label x:Name="NameLabel" FontSize="16"/>
+                <Label x:Name="DeviceTypeLabel" FontSize="16"/>
+                <Label x:Name="IdiomLabel" FontSize="16"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
