@@ -18,7 +18,6 @@
                 <Label x:Name="ManufacturerLabel" FontSize="16"/>
                 <Label x:Name="NameLabel" FontSize="16"/>
                 <Label x:Name="DeviceTypeLabel" FontSize="16"/>
-                <Label x:Name="IdiomLabel" FontSize="16"/>
             </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

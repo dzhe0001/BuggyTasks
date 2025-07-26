@@ -1,0 +1,36 @@
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BuggyTasks.Views.LocationPage"
+             Title="Location Information">
+    <ScrollView Padding="20">
+        <VerticalStackLayout Spacing="20">
+            <Label Text="Location Information" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,20"/>
+            
+            <VerticalStackLayout Spacing="10">
+                <Label x:Name="StatusLabel" 
+                       FontSize="16" 
+                       FontAttributes="Bold" 
+                       Text="Getting location..."/>
+                <Label x:Name="LatitudeLabel" FontSize="16"/>
+                <Label x:Name="LongitudeLabel" FontSize="16"/>
+                <Label x:Name="AccuracyLabel" FontSize="16"/>
+                <Label x:Name="AltitudeLabel" FontSize="16"/>
+                <Label x:Name="TimestampLabel" FontSize="16"/>
+            </VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                <Button x:Name="GetLastKnownButton" 
+                        Text="Get Last Known" 
+                        Clicked="OnGetLastKnownLocation"/>
+                <Button x:Name="GetCurrentButton" 
+                        Text="Get Current" 
+                        Clicked="OnGetCurrentLocation"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
